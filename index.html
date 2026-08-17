@@ -1,21 +1,581 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protafolio - German Guevara</title>
-</head>
-<body>
-    1.git status
-    #Agrego los cambios realizados a la pila
-    2.git add .
-    #Realñizar commit
-    3.git commit -m "Agregando pagina inicial del portafolio"
-    #Descargar cambios 
-    4. git pull origin main
-    #Subir cambios al servidor
-    5. git push origin main
 
+    <title>Portafolio - German Guevara</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ==============================
+         NAVEGACION
+    ============================== -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                German
+            </div>
+
+            <ul class="menu">
+
+                <li>
+                    <a href="#inicio">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="#sobre-mi">Sobre mi</a>
+                </li>
+
+                <li>
+                    <a href="#proyectos">Proyectos</a>
+                </li>
+
+                <li>
+                    <a href="#contacto">Contactarme</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+    
+    <button onclick="saludar();">saludar</button>
+
+
+    <main>
+
+        <!-- ==============================
+             INICIO / HERO
+        ============================== -->
+
+        <section id="inicio" class="hero">
+
+            <div class="hero-overlay">
+
+                <div class="hero-content">
+
+                    <img
+                        src="img/miFoto.jpeg"
+                        alt="Fotografia de German Guevara"
+                        class="foto-perfil"
+                    >
+
+                    <p class="saludo">
+                        Bienvenido a mi portafolio
+                    </p>
+
+                    <h1>
+                        Hola, soy German Guevara
+                    </h1>
+
+                    <h2>
+                        Estudiante de informatica y desarrollador de software
+                    </h2>
+
+                    <p class="descripcion-hero">
+                        Me interesa el desarrollo de software y la tecnologia.
+                        Actualmente estoy aprendiendo diferentes herramientas
+                        y lenguajes de programacion para crear soluciones
+                        utiles y funcionales.
+                    </p>
+
+                    <div class="hero-botones">
+
+                        <a href="#proyectos" class="btn">
+                            Ver proyectos
+                        </a>
+
+                        <a href="#contacto" class="btn btn-secundario">
+                            Contactarme
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             SOBRE MI
+        ============================== -->
+
+        <section id="sobre-mi" class="section">
+
+            <div class="contenedor">
+
+                <h2 class="titulo-seccion">
+                    Sobre Mi
+                </h2>
+
+                <p class="subtitulo-seccion">
+                    Conoce un poco sobre mi, mis intereses y las tecnologias
+                    con las que trabajo.
+                </p>
+
+                <div class="sobre-mi-container">
+
+                    <div class="sobre-mi-texto">
+
+                        <h3>
+                            ¿Quien soy?
+                        </h3>
+
+                        <p>
+                            Soy estudiante de informatica interesado en el
+                            desarrollo de software y en aprender nuevas
+                            tecnologias.
+                        </p>
+
+                        <p>
+                            Me gusta crear proyectos que me permitan poner
+                            en practica mis conocimientos y mejorar mis
+                            habilidades de programacion.
+                        </p>
+
+                        <p>
+                            Actualmente continuo desarrollando mis conocimientos
+                            en programacion, desarrollo web y bases de datos.
+                        </p>
+
+                    </div>
+
+
+                    <div class="datos-personales">
+
+                        <div class="dato">
+
+                            <strong>
+                                Nombre
+                            </strong>
+
+                            <span>
+                                German Guevara
+                            </span>
+
+                        </div>
+
+
+                        <div class="dato">
+
+                            <strong>
+                                Ocupacion
+                            </strong>
+
+                            <span>
+                                Estudiante
+                            </span>
+
+                        </div>
+
+
+                        <div class="dato">
+
+                            <strong>
+                                Area
+                            </strong>
+
+                            <span>
+                                Informatica y desarrollo de software
+                            </span>
+
+                        </div>
+
+
+                        <div class="dato">
+
+                            <strong>
+                                Intereses
+                            </strong>
+
+                            <span>
+                                Programacion, tecnologia y desarrollo web
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- HABILIDADES -->
+
+                <div class="habilidades-container">
+
+                    <h3>
+                        Mis habilidades
+                    </h3>
+
+                    <div class="habilidades">
+
+                        <span>
+                            HTML
+                        </span>
+
+                        <span>
+                            CSS
+                        </span>
+
+                        <span>
+                            Java
+                        </span>
+
+                        <span>
+                            JavaFX
+                        </span>
+
+                        <span>
+                            SQL
+                        </span>
+
+                        <span>
+                            Git
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             PROYECTOS
+        ============================== -->
+
+        <section id="proyectos" class="section section-gray">
+
+            <div class="contenedor">
+
+                <h2 class="titulo-seccion">
+                    Mis Proyectos
+                </h2>
+
+                <p class="subtitulo-seccion">
+                    Algunos de los proyectos que he realizado durante mi
+                    aprendizaje y formacion.
+                </p>
+
+
+                <div class="proyectos-container">
+
+
+                    <!-- PROYECTO 1 -->
+
+                    <article class="proyecto">
+
+                        <div class="proyecto-imagen">
+
+                            <img
+                                src="img/proyecto1.jpg"
+                                alt="Proyecto de desarrollo web"
+                            >
+
+                        </div>
+
+                        <div class="proyecto-contenido">
+
+                            <span class="proyecto-categoria">
+                                Desarrollo Web
+                            </span>
+
+                            <h3>
+                                Portafolio Personal
+                            </h3>
+
+                            <p>
+                                Pagina web personal creada para presentar
+                                informacion, habilidades y proyectos.
+                            </p>
+
+                            <div class="proyecto-tecnologias">
+
+                                <span>HTML</span>
+                                <span>CSS</span>
+
+                            </div>
+
+                            <button type="button" onclick="verProyecto('Portafolio Personal')">
+                                Ver proyecto
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROYECTO 2 -->
+
+                    <article class="proyecto">
+
+                        <div class="proyecto-imagen">
+
+                            <img
+                                src="img/proyecto2.png"
+                                alt="Proyecto de Java"
+                            >
+
+                        </div>
+
+                        <div class="proyecto-contenido">
+
+                            <span class="proyecto-categoria">
+                                Programacion
+                            </span>
+
+                            <h3>
+                                Sistema de Gestion
+                            </h3>
+
+                            <p>
+                                Aplicacion desarrollada para practicar
+                                estructuras de datos, clases y programacion
+                                orientada a objetos.
+                            </p>
+
+                            <div class="proyecto-tecnologias">
+
+                                <span>Java</span>
+                                <span>JavaFX</span>
+
+                            </div>
+
+                            <button type="button" onclick="verProyecto('Sistema de Gestion')">
+                                Ver proyecto
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROYECTO 3 -->
+
+                    <article class="proyecto">
+
+                        <div class="proyecto-imagen">
+
+                            <img
+                                src="img/proyecto3.jpg"
+                                alt="Proyecto de base de datos"
+                            >
+
+                        </div>
+
+                        <div class="proyecto-contenido">
+
+                            <span class="proyecto-categoria">
+                                Base de Datos
+                            </span>
+
+                            <h3>
+                                Sistema de Ventas
+                            </h3>
+
+                            <p>
+                                Proyecto orientado a la gestion de productos,
+                                vendedores y datos utilizando una base de datos.
+                            </p>
+
+                            <div class="proyecto-tecnologias">
+
+                                <span>Java</span>
+                                <span>SQL</span>
+                                <span>JavaFX</span>
+
+                            </div>
+
+                            <button type="button" onclick="verProyecto('Sistema de Ventas')">
+                                Ver proyecto
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             CONTACTO
+        ============================== -->
+
+        <section id="contacto" class="section">
+
+            <div class="contenedor">
+
+                <h2 class="titulo-seccion">
+                    Contacto
+                </h2>
+
+                <p class="subtitulo-seccion">
+                    Si deseas comunicarte conmigo, puedes utilizar la
+                    siguiente informacion o enviarme un mensaje.
+                </p>
+
+
+                <div class="contacto-container">
+
+
+                    <!-- INFORMACION DE CONTACTO -->
+
+                    <div class="contacto-info">
+
+                        <h3>
+                            Pongamonos en contacto
+                        </h3>
+
+                        <p>
+                            Estoy disponible para recibir consultas,
+                            comentarios y propuestas relacionadas con
+                            proyectos de tecnologia.
+                        </p>
+
+
+                        <div class="contacto-dato">
+
+                            <strong>
+                                Nombre
+                            </strong>
+
+                            German Guevara
+
+                        </div>
+
+
+                        <div class="contacto-dato">
+
+                            <strong>
+                                Correo
+                            </strong>
+
+                            german@example.com
+
+                        </div>
+
+
+                        <div class="contacto-dato">
+
+                            <strong>
+                                Telefono
+                            </strong>
+
+                            8585-8585
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FORMULARIO -->
+
+                    <form id="formContacto">
+
+                        <div class="form-group">
+
+                            <label for="nombre">
+                                Nombre
+                            </label>
+
+                            <input
+                                type="text"
+                                id="nombre"
+                                name="nombre"
+                                placeholder="Escriba su nombre"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="correo">
+                                Correo electronico
+                            </label>
+
+                            <input
+                                type="email"
+                                id="correo"
+                                name="correo"
+                                placeholder="Escriba su correo"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="mensaje">
+                                Mensaje
+                            </label>
+
+                            <textarea
+                                id="mensaje"
+                                name="mensaje"
+                                rows="6"
+                                placeholder="Escriba su mensaje"
+                            ></textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn"
+                        >
+                            Enviar mensaje
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==============================
+         FOOTER
+    ============================== -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <p>
+                © <span id="anio"></span> German Guevara
+            </p>
+
+            <p>
+                Portafolio personal
+            </p>
+
+        </div>
+
+    </footer>
+    <script src="js/script.js"></script>
 
 </body>
+
 </html>
